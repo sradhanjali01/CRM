@@ -1,0 +1,86 @@
+﻿@model CRM.Models.CRMCustomer
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/75d4e502e9.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/Content//CustomerDetails.css" />
+    <title>Customer Details</title>
+</head>
+<body>
+    <h1>Customer Details</h1>
+    <div id="main-container">
+        <div id="first-div">
+            <div id="info-body">
+                <h2>Personal Details</h2>
+                <div id="card">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                    <h4>Name:</h4>
+                    <h4>@Model.Name</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <h4>Email:</h4>
+                    <h4>@Model.email</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <h4>City:</h4>
+                    <h4>@Model.city</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <h4>Phone no:</h4>
+                    <h4>@Model.mobile</h4>
+                </div>
+
+            </div>
+            <div id="engage-body">
+                <h2>Engagement Details</h2>
+                <div id="card">
+                    <i class="fa-solid fa-phone fa-lg"></i>
+                    <h4>Phone call:</h4>
+                    <h4>@Model.phone_call</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <h4>Email:</h4>
+                    <h4>@Model.email_answer</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <h4>Open issue:</h4>
+                    <h4>@Model.open_issue</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                    <h4>Communication Channel:</h4>
+                    <h4>@Model.communication_chhanel</h4>
+                </div>
+
+            </div>
+        </div>
+        <div id="second-div">
+            <div id="sale-body">
+                <h2>Purchase History</h2>
+                <div id="card">
+                    <i class="fa-solid fa-circle-check fa-lg"></i>
+                    <h4>Total sale:</h4>
+                    <h4>@Model.total_sale</h4>
+                </div>
+                <div id="card">
+                    <i class="fa-solid fa-circle-check fa-lg"></i>
+                    <h4>Reurn\Cancelation:</h4>
+                    <h4>@Model.return_cancellation</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

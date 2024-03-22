@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head >
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <style>
+        #txtLogin{
+            padding:10px 20px;
+            background-color:royalblue;
+            color:white;
+            font-weight:bold;
+            border:none;
+            box-shadow:0px 0px 4px 5px grey;
+            border-radius:10px;
+            margin-left:50px
+
+        }
+        #txtGlogin {
+            padding:10px 20px;
+            background-color: royalblue;
+            color: white;
+            font-weight: bold;
+            border: none;
+            box-shadow: 0px 0px 4px 5px grey;
+            border-radius: 10px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    @Html.Partial("_Navbar")
+    <h1 style="text-align:center;color:crimson">login</h1>
+    <div style="display:flex;justify-content:center;align-items:center">
+
+        <form method="post"action="Login">
+            <label>E-mail</label>
+            <input type="text" name="txtEmail" style="margin-left:20px"><br /><br />
+            <label>Password</label>
+            <input type="password" name="txtPassword"><br /><br />
+            <a href="#" style="margin-left:40px;color:blue">Forgot password ?</a>
+            <p>I have not Register ? <a href="/Account/Signin" style="color:blue">Sign up</a></p>
+            <input type="submit" value="login" id="txtLogin"><br /><br />
+            <button id="txtGlogin">login with google</button>
+        </form>
+
+    </div>
+    @Html.Partial("_Footer")
+</body>
+</html>

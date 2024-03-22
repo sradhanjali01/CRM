@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRM" Class="CRMDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.CRMCustomer" Member="CRMCustomers">
+    <Type Name="CRMCustomer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(340)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(450)" CanBeNull="true" />
+      <Column Name="phone_call" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="email_answer" Type="System.String" DbType="VarChar(270)" CanBeNull="true" />
+      <Column Name="call_timing" Type="System.String" DbType="VarChar(178)" CanBeNull="true" />
+      <Column Name="open_issue" Type="System.String" DbType="VarChar(240)" CanBeNull="true" />
+      <Column Name="communication_chhanel" Type="System.String" DbType="VarChar(160)" CanBeNull="true" />
+      <Column Name="total_sale" Type="System.String" DbType="VarChar(258)" CanBeNull="true" />
+      <Column Name="return_cancellation" Type="System.String" DbType="VarChar(345)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRMUser" Member="CRMUsers">
+    <Type Name="CRMUser">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
